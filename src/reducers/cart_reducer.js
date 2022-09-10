@@ -5,7 +5,7 @@ import {
   REMOVE_CART_ITEM,
   TOGGLE_CART_ITEM_AMOUNT,
 } from "../actions";
-import CartItem from "../components/CartItem";
+
 
 const cart_reducer = (state, action) => {
   if (action.type === ADD_TO_CART) {
@@ -64,9 +64,7 @@ const cart_reducer = (state, action) => {
           }
           return { ...item, amount: newAmount };
         }
-      } else {
-        return item;
-      }
+      } return item 
     });
 
     return { ...state, cart: tempCart };
@@ -91,3 +89,4 @@ const cart_reducer = (state, action) => {
 };
 
 export default cart_reducer;
+
