@@ -1,7 +1,7 @@
 ## Furniture Stores built with react
--Uses react-router version 6
--Uses auth0 for authentication
--Payments with stripe
+- Uses react-router version 6
+- Uses auth0 for authentication
+- Payments with stripe
 
 ### Depoyed on Netlify
 [Furniture-stores](https://furniture-stores-hb.netlify.app/)
