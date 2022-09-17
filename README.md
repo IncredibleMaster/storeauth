@@ -1,22 +1,56 @@
-## Notes
+## Furniture Stores built with react
+-Uses react-router version 6
+-Uses auth0 for authentication
+-Payments with stripe
 
-#### Older React Version
+### Depoyed on Netlify
+[Furniture-stores](https://furniture-stores-hb.netlify.app/)
 
+#### Setup
+
+```bash
+npm install && npm start
 ```
-"react": "^16.13.1",
-"react-dom": "^16.13.1",
-"react-scripts": "3.4.3",
+###### For build up
+```bash
+npm run build
 ```
 
-#### Current React Version
-
+### To install netlify CLI
+```bash
+npm install -g netlify-cli
 ```
-"react": "^17.0.1",
-"react-dom": "^17.0.1",
-"react-scripts": "4.0.0",
+### To build up with netlify
+```bash
+ntl dev
 ```
 
-#### Alternative fix
+## Auth0
 
-.env file in the root
-FAST_REFRESH=FALSE
+- [Auth0 - Main Docs](https://auth0.com/)
+
+- Create Application
+- Choose : Single Page Web Applications
+- Choose : React
+- Go to Settings Tab
+- Copy/Paste Domain, ClientID - can be public (or use .env)
+- Add Domain -
+  for now http://localhost:3000 (DON'T COPY PASTE FROM URL BAR)
+
+  - Allowed Callback URLs
+  - Allowed Logout URLs
+  - Allowed Web Origins
+  - SAVE CHANGES!!!!!!!!!!!!!!!
+
+- Connections
+  email,social
+
+- [React SDK Docs](https://auth0.com/docs/libraries/auth0-react)
+- [REACT SDK API Docs](https://auth0.github.io/auth0-react/)
+
+
+
+## Stripe
+- [Stripe - Main Docs](https://stripe.com/docs)
+
+### Built using  John-Smilgas course on Udemy
